@@ -3199,7 +3199,7 @@ function DescargaWord() {
     return (
         <>
             <button
-                className="bg-sky-800 text-sm h-8 max-sm:text-xs max-sm:w-full hover:bg-blue-300 p-2 rounded-sm 
+                className="bg-sky-700 text-sm h-8 max-sm:text-xs max-sm:w-full hover:bg-blue-300 p-2 rounded-sm 
         text-white font-semibold justify-center items-center flex w-1/2"
                 onClick={downloadDocument}
             >

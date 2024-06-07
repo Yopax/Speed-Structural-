@@ -515,7 +515,7 @@ function getConinValue(setLosa2) {
     return (
         <>
             <button
-                className=" w-1/2 h-8 bg-red-600 font-semibold max-sm:text-sm max-sm:w-full hover:bg-red-300 p-2 rounded-sm 
+                className=" w-1/2 h-8 bg-emerald-700 font-semibold max-sm:text-sm max-sm:w-full hover:bg-red-300 p-2 rounded-sm 
         text-white font justify-center items-center flex"
                 onClick={generarPDF}
             >
