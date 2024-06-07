@@ -391,7 +391,7 @@ function DescargaWord() {
         });
 
         const table = new Table({
-            columnWidths: [3505, 3505, 3505],
+            columnWidths: [3505, 3505, 3505, 3505],
             rows: [
                 new TableRow({
                     children: [
@@ -404,7 +404,7 @@ function DescargaWord() {
                                 },
                             },
                             width: {
-                                size: 2000,
+                                size: 5000,
                                 type: WidthType.DXA,
                             },
                             children: [
@@ -429,7 +429,7 @@ function DescargaWord() {
                                 },
                             },
                             width: {
-                                size: 3505,
+                                size: 5000,
                                 type: WidthType.DXA,
                             },
                             children: [
@@ -465,7 +465,7 @@ function DescargaWord() {
                                 },
                             },
                             width: {
-                                size: 2000,
+                                size: 5000,
                                 type: WidthType.DXA,
                             },
                             children: [
@@ -495,7 +495,7 @@ function DescargaWord() {
                                 },
                             },
                             width: {
-                                size: 3505,
+                                size: 5000,
                                 type: WidthType.DXA,
                             },
                             children: [
@@ -3077,7 +3077,7 @@ function DescargaWord() {
                                 new Paragraph({
                                     children: [
                                         new TextRun({
-                                            text: `${total2} TN`,
+                                            text: `${total2*(np-2)} TN`,
                                             size: 20,
                                         }),
                                     ],

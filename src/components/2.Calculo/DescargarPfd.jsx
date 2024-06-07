@@ -498,7 +498,7 @@ function getConinValue(setLosa2) {
             [
                 "Cargas Totales",
                 `${total1}TN`,
-                `${total2}TN`,
+                `${total2*(np-2)}TN`,
                 `${total3}TN`,
             ],
         ];
