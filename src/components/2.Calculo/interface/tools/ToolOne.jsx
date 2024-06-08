@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/dialog";
 import { AiOutlineSave } from "react-icons/ai";
 import React from 'react'
+import { PiPictureInPictureFill } from "react-icons/pi";
+
 
 function ToolOne() {
     const {
@@ -28,7 +30,6 @@ function ToolOne() {
             <Dialog>
                 <DialogTrigger className="font-sans text-xs h-20 w-20  text-white">
                     <div className="flex flex-col items-center justify-center">
-
                         <p>Datos del Plano</p>
                     </div>
                 </DialogTrigger>
@@ -36,6 +37,7 @@ function ToolOne() {
                     <DialogHeader>
                         <DialogTitle>
                             <div className="flex space-x-2">
+                            <PiPictureInPictureFill />
                                 <p className="font-sans">Configuración de Datos</p>
                             </div>
                         </DialogTitle>
@@ -83,7 +85,7 @@ function ToolOne() {
                                         <div className="flex mx-auto">
                                             <label htmlFor="columnGap"
                                             className="w-2/3 px-2 text-stone-600 text-start"
-                                            >viga y (cm)</label>
+                                            >Base de la viga y-y (cm)</label>
                                             <input
                                                 id="columnGap"
                                                 type="number"
@@ -95,7 +97,7 @@ function ToolOne() {
                                         <div className="flex mx-auto">
                                             <label htmlFor="rowGap"
                                             className="w-2/3 px-2 text-stone-600 text-start"
-                                            >viga x (cm)</label>
+                                            >Base de la viga x-x (cm)</label>
                                             <input
                                                 id="rowGap"
                                                 type="number"

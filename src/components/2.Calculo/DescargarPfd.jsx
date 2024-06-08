@@ -4,6 +4,8 @@ import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 import useStore from '@/store/useStore';
 import { useEffect } from 'react';
+import { MdSimCardDownload } from "react-icons/md";
+
 
 
 
@@ -519,7 +521,8 @@ function getConinValue(setLosa2) {
         text-white font justify-center items-center flex"
                 onClick={generarPDF}
             >
-                PDF
+                
+                PDF<MdSimCardDownload />
             </button>
         </>
     )

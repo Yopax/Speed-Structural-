@@ -10,6 +10,8 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog";
 import React from 'react'
+import { GrConfigure } from "react-icons/gr";
+
 
 function DatosPro() {
     const {
@@ -43,7 +45,9 @@ function DatosPro() {
                     <DialogHeader>
                         <DialogTitle>
                             <div className="flex space-x-2">
-                                <p className="font-sans">Configuración de Datos</p>
+                            <GrConfigure />
+                                <p className=" font-sans">
+                                Configuración de Datos</p>
                             </div>
                         </DialogTitle>
                         <DialogDescription asChild="asChild">
@@ -56,9 +60,9 @@ function DatosPro() {
                                         <div className="flex mx-auto">
                                         <label
                                             className="w-2/3 px-2 text-stone-600 text-start"
-                                            >Carga de la Edificación(P)</label>
+                                            >Carga de la Edificación(kgf/m2)</label>
                                             <input
-                                        
+                                            placeholder="kgf/m2"
                                                 type="number"
                                                 value={caed}
                                                 onChange={(e) => setCaed(e.target.value)}
@@ -68,9 +72,10 @@ function DatosPro() {
                                         <div className="flex mx-auto">
                                         <label htmlFor="rowGap"
                                             className="w-2/3 px-2 text-stone-600 text-start"
-                                            >Numero de pisos:</label>
+                                            >Numero de pisos(und)</label>
                                             <input
                                                 id="rowGap"
+                                                placeholder="und"
                                                 type="number"
                                                 value={np}
                                                 onChange={(e) => setNp(e.target.value)}
@@ -79,10 +84,12 @@ function DatosPro() {
                                         </div>
                                         <div className="flex mx-auto">
                                         <label htmlFor="rowGap"
+    
                                             className="w-2/3 px-2 text-stone-600 text-start"
-                                            >Resistencia a la compresión fc</label>
+                                            >Resistencia a la compresión(kgf/cm2)</label>
                                             <input
                                                 id="rowGap"
+                                                placeholder="kgf/cm2"
                                                 type="number"
                                                 value={fc}
                                                 onChange={(e) => setFc(parseInt(e.target.value))}
@@ -92,7 +99,7 @@ function DatosPro() {
                                         <div className="flex mx-auto">
                                         <label htmlFor="rowGap"
                                             className="w-2/3 px-2 text-stone-600 text-start"
-                                            >Coeficiente del suelo(k)</label>
+                                            >Coeficiente del suelo(und)</label>
                                             <input
                                                
                                                 type="number"
@@ -104,10 +111,11 @@ function DatosPro() {
                                         <div className="flex mx-auto">
                                         <label htmlFor="rowGap"
                                             className="w-2/3 px-2 text-stone-600 text-start"
-                                            >Capacidad admisible</label>
+                                            >Capacidad admisible(kgf/cm2)</label>
                                             <input
                                             
                                                 type="number"
+                                                placeholder="kgf/cm2"
                                                 value={qadm}
                                                 onChange={(e) => setQadm(parseInt(e.target.value))}
                                                 className="w-1/3 text-center flex h-5  text-stone-600 font-sans  bg-transparent px-3 text-xs border-l focus-visible:outline-none"
@@ -116,10 +124,11 @@ function DatosPro() {
                                         <div className="flex mx-auto">
                                         <label htmlFor="rowGap"
                                             className="w-2/3 px-2 text-stone-600 text-start"
-                                            >Carga por area</label>
+                                            >Carga por area(tnf/m2)</label>
                                             <input
                                             
                                                 type="number"
+                                                placeholder="tnf/m2"
                                                 value={ca}
                                                 onChange={(e) => setCa(e.target.value)}
                                                 className="w-1/3 text-center flex h-5  text-stone-600 font-sans  bg-transparent px-3 text-xs border-l focus-visible:outline-none"
@@ -128,9 +137,9 @@ function DatosPro() {
                                         <div className="flex mx-auto">
                                         <label htmlFor="rowGap"
                                             className="w-2/3 px-2 text-stone-600 text-start"
-                                            >Peso especifico del concreto</label>
+                                            >Peso especifico del concreto(tn/m3)</label>
                                             <input
-                                            
+                                            placeholder="tn/m3"
                                                 type="number"
                                                 value={pec}
                                                 onChange={(e) => setPec(e.target.value)}
@@ -140,9 +149,9 @@ function DatosPro() {
                                         <div className="flex mx-auto">
                                         <label htmlFor="rowGap"
                                             className="w-2/3 px-2 text-stone-600 text-start"
-                                            >Profundidad de desplante</label>
+                                            >Profundidad de desplante(m)</label>
                                             <input
-                                            
+                                            placeholder="m"
                                                 type="number"
                                                 value={pdd}
                                                 onChange={(e) => setPdd(parseInt(e.target.value))}

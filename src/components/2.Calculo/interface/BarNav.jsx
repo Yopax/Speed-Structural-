@@ -3,6 +3,7 @@ import ToolOne from '@/components/2.Calculo/interface/tools/ToolOne'
 import ToolTwo from './tools/ToolTwo'
 import DatosPro from './tools/DatosPro'
 import ToolTheer from './tools/ToolTheer'
+import FormulasGenerales from './FormulasGenerales'
 
 function BarNav() {
   return (
@@ -12,6 +13,7 @@ function BarNav() {
         <ToolOne/>
         <ToolTwo/>
         <ToolTheer/>
+        
       </div>
     </>
   )

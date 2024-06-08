@@ -7,9 +7,9 @@ import { motion } from 'framer-motion';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const navigation = [
-  { name: 'Home Page', href: '/', current: true },
-  { name: 'Sobre mí', href: '/', current: false },
-  { name: 'Portafolio', href: '#', current: false },
+  { name: 'Descargar Manual', href: 'https://drive.google.com/uc?export=download&id=1Lpx0-9vAiSqdxUTL9IQ_FheY1htgngo6', current: true },
+  { name: 'Home Page', href: '/', current: false },
+  { name: 'Sobre mi', href: '/autor', current: false },
 ];
 
 function classNames(...classes) {
@@ -54,17 +54,20 @@ export default function NavBar() {
                   <div className="hidden sm:block flex-1">
                     <div className="flex justify-center space-x-8 items-center w-full">
                       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                        <Link href="/">
+                        <Link href="/normas"
+                        target='_blank'>
                           <p className="text-slate-700 hover:text-emerald-700 text-sm font-semibold">Normas</p>
                         </Link>
                       </motion.button>
                       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                        <Link href="/">
+                        <Link href="/analisis"
+                        target='_blank'>
                           <p className="text-slate-700 hover:text-emerald-700 text-sm font-semibold">App</p>
                         </Link>
                       </motion.button>
                       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                        <Link href="/">
+                        <Link href="/autor"
+                        target='_blank'>
                           <p className="text-slate-700 hover:text-emerald-700 text-sm font-semibold">Autor</p>
                         </Link>
                       </motion.button>

@@ -3,7 +3,7 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 const Table = React.forwardRef(({ className, ...props }, ref) => (
-  <div className="relative w-full overflow-auto rounded-sm mt-2 max-sm:mt-4 border mx-auto  ">
+  <div className="relative w-full overflow-auto rounded-sm mt-2 max-sm:mt-3 border mx-auto  ">
     <table
       ref={ref}
       className={cn("w-full caption-bottom text-xs  font-sans text-center max-sm:text-xs ", className)}
@@ -69,7 +69,7 @@ TableCell.displayName = "TableCell"
 const TableCaption = React.forwardRef(({ className, ...props }, ref) => (
   <caption
     ref={ref}
-    className={cn("  text-xs text-start px-3 py-1 text-emerald-500", className)}
+    className={cn("text-xs text-start px-3 py-1 text-emerald-500", className)}
     {...props} />
 ))
 TableCaption.displayName = "TableCaption"

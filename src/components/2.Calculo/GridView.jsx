@@ -1,18 +1,21 @@
 // components/GridView.js
 "use client";
 import useStore from '@/store/useStore';
+import { Badge } from "@/components/ui/badge"
+
 
 const GridView = () => {
   const { columns, rows, columnGap, rowGap, columnSizes, rowSizes, setColumnSize, setRowSize } = useStore();
 
   return (
+    <>
     <div className="flex bg-slate-100  max-sm:w-full  justify-center  mx-auto mt-10 max-sm:mt-4">
 
         <div className="flex flex-col  justify-center items-center mx-auto space-y-10">
           {/* First nested div */}
           <div className="flex w-full  justify-center items-center mx-auto">
             <div className="relative  justify-center items-center mx-auto">
-              <div className="flex w-[400px] max-sm:w-[250px]    space-x-8 items-center mb-5">
+              <div className="flex w-[400px] max-sm:w-[250px]    space-x-8 items-center ">
                 {Array.from({ length: columns }).map((_, index) => (
                   <input
                     key={index}
@@ -53,6 +56,9 @@ const GridView = () => {
           </div>
         </div>
     </div>
+    <Badge>Tabla de resultados</Badge>
+    </>
+    
   );
 };
 

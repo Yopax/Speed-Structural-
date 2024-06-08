@@ -4,6 +4,8 @@ import { saveAs } from "file-saver";
 import * as docx from "docx";
 import useStore from '@/store/useStore';
 import { useEffect } from 'react';
+import { MdSimCardDownload } from "react-icons/md";
+
 import {
     TextRun,
     Document,
@@ -3203,7 +3205,8 @@ function DescargaWord() {
         text-white font-semibold justify-center items-center flex w-1/2"
                 onClick={downloadDocument}
             >
-                WORD
+                WORD<MdSimCardDownload />
+
             </button>
         </>
     )

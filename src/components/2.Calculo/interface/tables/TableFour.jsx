@@ -9,6 +9,8 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
+import { FaBuilding } from "react-icons/fa";
+
 
 function TableFour() {
     const { columns, rows, ca, dimplx, dimply, pec, dimclx, dimcly, lcol,dimvlx,dimvly,lvx,lvy,dimvlx2,dimvly2,
@@ -87,7 +89,7 @@ function TableFour() {
     return (
         <>
             <Table>
-            <TableCaption>primer piso total cv + cm: {total3}</TableCaption>
+            <TableCaption> primer piso total cv + cm: {total3}</TableCaption>
             <TableBody>
 
                     <TableRow>
