@@ -96,7 +96,7 @@ function ToolTheer() {
                                 <div className="flex-col w-full divide-y divide-stone-200 border-x border-y mx-auto">
                                     <div className="flex mx-auto">
                                         <label className="w-2/3 px-2 text-stone-600 text-start">
-                                            Primer piso(tn/m2)
+                                            Ultimo piso(tn/m2)
                                         </label>
                                         <input
                                             type="number"
