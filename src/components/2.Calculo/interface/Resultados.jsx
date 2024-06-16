@@ -36,12 +36,12 @@ function Resultados() {
 
   return (
     <>
-      <div className=" m-auto w-[50%] max-sm:w-full   mb-6">
+      <div className=" mx-auto w-[50%] max-sm:w-full">
         <TableOne />
         <TableTwo />
         <TableTheer />
         <TableFour />
-        <div className='flex w-[100%] space-x-4 mt-6 mx-auto'>
+        <div className='flex w-[100%] max-[425px]:w-[96%] space-x-4 mt-6 mx-auto'>
           <DescargarPfd />
           <DescargaWord />
 

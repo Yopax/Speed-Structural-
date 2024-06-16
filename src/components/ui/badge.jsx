@@ -9,7 +9,7 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default:
-          "flex w-full text-center mt-2 hidden max-sm:flex justify-center border",
+          "flex w-full calc max-[425px]:w-[96%] max-[425px]:text-white mx-auto  text-center mt-2 hidden max-sm:flex justify-center border",
         secondary:
           "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
         destructive:

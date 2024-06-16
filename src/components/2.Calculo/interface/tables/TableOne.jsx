@@ -114,7 +114,7 @@ function TableOne() {
             <Table>
                 <TableHeader>
                     <TableRow>
-                        <TableHead ></TableHead>
+                        <TableHead >PRE</TableHead>
                         <TableHead>la</TableHead>
                         <TableHead>vx</TableHead>
                         <TableHead >vy</TableHead>

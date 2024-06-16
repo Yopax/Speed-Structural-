@@ -7,7 +7,7 @@ function Boton() {
       <Link target='blank' href="/analisis">
       <button
             type="button"
-            className="max-[425px]:text-base  bg-emerald-600 hover:bg-blue-600 text-white text-lg  font-bold py-4 px-10 rounded-lg"
+            className="text-3xl max-[425px]:text-base bg-sky-900 hover:bg-emerald-600 text-white font-extrabold py-8 px-[50px] rounded-lg"
           >
             PROBAR AHORA
           </button>

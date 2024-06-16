@@ -3,10 +3,10 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 const Table = React.forwardRef(({ className, ...props }, ref) => (
-  <div className="relative w-full overflow-auto rounded-sm mt-2 max-sm:mt-3 border mx-auto  ">
+  <div className="relative w-full max-[425px]:w-[96%] overflow-auto rounded-sm mt-2 max-sm:mt-3 border mx-auto  ">
     <table
       ref={ref}
-      className={cn("w-full caption-bottom text-xs  font-sans text-center max-sm:text-xs ", className)}
+      className={cn("w-full  caption-bottom text-xs max-[425px]:text-white calc  text-center max-sm:text-xs ", className)}
       {...props} />
   </div>
 ))
@@ -20,7 +20,7 @@ TableHeader.displayName = "TableHeader"
 const TableBody = React.forwardRef(({ className, ...props }, ref) => (
   <tbody
     ref={ref}
-    className={cn("[&_tr:last-child]:border-0", className)}
+    className={cn("[&_tr:last-child]:border-0 ", className)}
     {...props} />
 ))
 TableBody.displayName = "TableBody"
@@ -59,7 +59,7 @@ const TableCell = React.forwardRef(({ className, ...props }, ref) => (
   <td
     ref={ref}
     className={cn(
-      " align-middle  [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]",
+      " align-middle   [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]",
       className
     )}
     {...props} />
@@ -69,7 +69,7 @@ TableCell.displayName = "TableCell"
 const TableCaption = React.forwardRef(({ className, ...props }, ref) => (
   <caption
     ref={ref}
-    className={cn("text-xs text-start px-3 py-1 text-emerald-500", className)}
+    className={cn("text-xs text-start px-3 py-1 text-red-500", className)}
     {...props} />
 ))
 TableCaption.displayName = "TableCaption"

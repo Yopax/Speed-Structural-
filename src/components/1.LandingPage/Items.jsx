@@ -3,72 +3,60 @@ import { GrSelect } from "react-icons/gr";
 import { GrConfigure } from "react-icons/gr";
 import { BsInputCursor } from "react-icons/bs";
 import { GrDocumentText } from "react-icons/gr";
+import { BsDownload } from "react-icons/bs";
+
 
 
 
 
 
 function Items() {
+  const textOne = "w-[60%] mx-auto text-white text-2xl leading-6 font-bold"
+  const textTwo ="text-lg max-sm:text-base font-normal my-6 text-white"
   return (
     <>
-      <div className="w-full text-center items-center p-2 grid grid-cols-2 max-[1024px]:grid-cols-3 max-[768px]:grid-cols-2 max-[425px]:grid-cols-1 justify-center  mb-8 ">
-
-        <div className="flex flex-col text-white items-center justify-center  font-bold m-2 rounded-md h-80 bg-emerald-600">
+    
+      <div className="w-full text-center bg-black items-center p-2 grid grid-cols-3 max-[1024px]:grid-cols-3 max-[768px]:grid-cols-2 max-[425px]:grid-cols-1 justify-center">
+        
+        <div className="flex flex-col text-white items-center justify-center bg-cover font-bold m-2 rounded-md h-80 bg-[url('/img4.jpg')]">
           <div>
             <p
-              className="w-[60%] mx-auto bg-white text-emerald-600 text-sm leading-6 font-bold py-1 px-3 rounded-lg"
+              className={textOne}
             >
-              01.Selecciona
+              01.Ingresa
             </p>
-            <p className='text-sm font-normal my-6 text-white'>Selecciona el tipo de calculo que se desea realiza</p>
+            <p className={textTwo}>Ingresa ala app mediante el boton  o qr</p>
           </div>
           <div className="flex flex-col text-9xl text-center items-center justify-center">
             <GrSelect />
           </div>
         </div>
-        <div className="flex flex-col text-white items-center justify-center  font-bold m-2 rounded-md h-80 bg-blue-600">
+        <div className="flex flex-col bg-cover bg-[url('/img6.jpg')] text-white items-center justify-center  font-bold m-2 rounded-md h-80 bg-blue-600">
           <div>
             <p
-              className="w-[60%] mx-auto bg-white text-blue-600 text-sm leading-6 font-bold py-1 px-3 rounded-lg"
+              className={textOne}
             >
-              02.Configura
+              02.Completa
             </p>
-            <p className='text-sm font-normal my-6 text-white'>Configura tu proyecto según tus necesidades</p>
+            <p className={textTwo}>Completa los datos solicitados</p>
           </div>
           <div className="flex flex-col text-9xl text-center items-center justify-center">
-            <GrConfigure />
-
+          <BsInputCursor />
           </div>
         </div>
-        <div className="flex flex-col text-white items-center justify-center  font-bold m-2 rounded-md h-80 bg-blue-600">
+        <div className="flex flex-col bg-cover bg-[url('/img7.jpg')] text-white items-center justify-center  font-bold m-2 rounded-md h-80 bg-blue-600">
           <div>
             <p
-              className="w-[60%] mx-auto bg-white text-blue-600 text-sm leading-6 font-bold py-1 px-3 rounded-lg"
+              className={textOne}
             >
-              03.Ingresa
+              03.Listo!
             </p>
-            <p className='text-sm font-normal my-6 text-white'>Ingresa los datos solicitados</p>
+            <p className={textTwo}>Descarga tu informe en pdf o Word</p>
           </div>
           <div className="flex flex-col text-9xl text-center items-center justify-center">
-            <BsInputCursor />
-
+          <BsDownload />
           </div>
         </div>
-        <div className="flex flex-col text-white items-center justify-center  font-bold m-2 rounded-md h-80 bg-emerald-600">
-          <div>
-            <p
-              className="w-[60%] mx-auto bg-white text-emerald-600 text-sm leading-6 font-bold py-1 px-3 rounded-lg"
-            >
-              04.Obtén tu informe
-            </p>
-            <p className='text-sm font-normal my-6 text-white'>Visualiza el calculo completo en un informe</p>
-          </div>
-          <div className="flex flex-col text-9xl text-center items-center justify-center">
-            <GrDocumentText />
-
-          </div>
-        </div>
-
       </div>
     </>
   );

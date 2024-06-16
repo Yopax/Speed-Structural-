@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
@@ -73,4 +76,14 @@
     body {
       @apply bg-background text-foreground;
     }
+  }
+
+  .title{ 
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  .app{
+    font-family: "Source Code Pro", monospace;
+  }
+  .calc{
+    font-family: "Fira Code", monospace;
   }

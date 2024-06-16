@@ -4,26 +4,21 @@ import Boton from "@/components/1.LandingPage/Boton";
 function PresentacionHome() {
   return (
     <>
-      <div className="flex mx-auto w-[60%] max-sm:w-[75%]  mb-24 max-sm:mb-4 pt-[150px] max-sm:pt-[100px]">
-        <div className="flex-col w-full justify-center text-center ">
-          <h4 className="text-lg font-medium max-sm:text-[11px] text-emerald-600 leading-3  ">
+      <div className="flex mx-auto max-[1580px]:pb-20 mt-[80px] bg-[url('/img3.jpg')] bg-cover w-full h-screen max-sm:w-screen items-center justify-center">
+        <div className="flex flex-col max-[425px]:pb-[50px] max-[320px]:pb-[10px] w-[80%] max-[1024px]:w-[100%] max-[768px]:w-[70%] max-[425px]:w-[80%] max-[768px]:justify  justify-center items-center text-center">
+          <h4 className="text-2xl max-[1580px]:text-sm  max-sm:text-[11px] text-white tracking-[0.2rem] max-[1024px]:tracking-[0.1rem] max-[1024px]:text-xl max-[425px]:tracking-normal leading-3">
             App Web creada para optimizar el tiempo de cálculo de tu
           </h4>
-          <h1 className=" text-6xl py-4 max-sm:py-5  max-sm:text-3xl max-[320px]:text-2xl  flex justify-center text-emerald-600 font-extrabold text-center">
-            Predimensionamiento y metrado de cargas para el análisis y  diseño sísmico.
+          <h1 className="text-8xl max-[1580px]:text-7xl   max-[425px]:text-5xl w-full py-8 max-sm:py-5 max-sm:text-3xl max-[320px]:text-2xl flex justify-center text-white font-extrabold text-center">
+            Metrado de cargas para el análisis y diseño sísmico.
             <br />
           </h1>
-          <p className="max-sm:text-sm  leading-6 mb-2 mt-2 max-sm:mt-0 mb1:mx-10">
-            Speed Structural,tiene como finalidad optimizar el tiempo de cálculo.
-            
-          </p>
-          <p className=" mb-6 text-[10px] font-semibold">
-            Proyecto de titulación para optar el grado de Ingeniero Civil.
-          </p>
-          <div className="flex justify-center  space-x-4 my-2">
+          <div className="flex justify-center space-x-4 my-2">
             <Boton />
-            
           </div>
+          <p className="text-slate-200 max-[425px]:text-xs text-base font-medium">
+            Proyecto para optar el grado de Ing. Civil.
+          </p>
         </div>
       </div>
     </>

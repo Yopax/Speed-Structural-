@@ -84,7 +84,7 @@ function TableTheer() {
         <>
 
             <Table>
-                <TableCaption>pisos intermedios cv + cm: {total2}</TableCaption>
+                <TableCaption>Total pisos intermedios: {total2*(np-2)}</TableCaption>
 
                 <TableBody>
                     <TableRow>

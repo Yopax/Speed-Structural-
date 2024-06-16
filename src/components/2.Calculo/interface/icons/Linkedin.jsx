@@ -7,7 +7,7 @@ function Linkedin() {
     <>
       
         <Link target="blank" href="https://www.linkedin.com/in/darli-barreto/">
-          <FaLinkedin className="w-7 h-7" />
+          <FaLinkedin className="w-9 h-9" />
         </Link>
       
     </>

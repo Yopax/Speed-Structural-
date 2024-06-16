@@ -21,11 +21,11 @@ export default function NavBar() {
     <Disclosure as="nav" className="dark:bg-slate-800">
       {({ open }) => (
         <>
-          <div className="fixed top-0 left-0 w-full bg-white z-50 ">
+          <div className="fixed top-0 left-0 w-full bg-black z-50 ">
             <div className="mx-auto w-[90%] max-sm:w-[95%]">
-              <div className="flex h-[70px] items-center">
-                <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <div className="flex h-[80px] items-center">
+                <div className="absolute inset-y-0 ml-4 left-0 flex items-center sm:hidden">
+                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -42,33 +42,33 @@ export default function NavBar() {
                   >
                     <Link href="/">
                       <div className="flex">
-                        <h5 className="text-lg max-sm:text-xl font-bold mr-1 text-sky-700 hover:text-emerald-600">
+                        <h5 className="text-xl max-sm:text-xl font-bold mr-1 text-sky-700 hover:text-emerald-600">
                           Speed
                         </h5>
-                        <h5 className="text-lg max-sm:text-xl font-bold text-emerald-600 hover:text-sky-700">
+                        <h5 className="text-xl max-sm:text-xl font-bold text-emerald-600 hover:text-sky-700">
                           Structural
                         </h5>
                       </div>
                     </Link>
                   </motion.button>
                   <div className="hidden sm:block flex-1">
-                    <div className="flex justify-center space-x-8 items-center w-full">
+                    <div className="flex justify-center space-x-14 items-center w-full">
                       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                         <Link href="/normas"
                         target='_blank'>
-                          <p className="text-slate-700 hover:text-emerald-700 text-sm font-semibold">Normas</p>
+                          <p className="text-white hover:text-emerald-700 text-base font-semibold">Normas</p>
                         </Link>
                       </motion.button>
                       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                         <Link href="/analisis"
                         target='_blank'>
-                          <p className="text-slate-700 hover:text-emerald-700 text-sm font-semibold">App</p>
+                          <p className="text-white hover:text-emerald-700 text-base font-semibold">App</p>
                         </Link>
                       </motion.button>
                       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                         <Link href="/autor"
                         target='_blank'>
-                          <p className="text-slate-700 hover:text-emerald-700 text-sm font-semibold">Autor</p>
+                          <p className="text-white hover:text-emerald-700 text-base font-semibold">Autor</p>
                         </Link>
                       </motion.button>
                     </div>

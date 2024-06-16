@@ -89,7 +89,7 @@ function TableFour() {
     return (
         <>
             <Table>
-            <TableCaption> primer piso total cv + cm: {total3}</TableCaption>
+            <TableCaption>Total piso 1: {total3}</TableCaption>
             <TableBody>
 
                     <TableRow>

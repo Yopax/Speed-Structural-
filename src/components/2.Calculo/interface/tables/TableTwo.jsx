@@ -64,10 +64,10 @@ const total1 = losaAligerada + (numeroColumnas*pec*(columnGap/100)*(rowGap/100)*
     return (
         <>
             <Table>
-            <TableCaption>piso {np} total cv + cm: {total1}</TableCaption>
+            <TableCaption>Total piso {np}: {total1}</TableCaption>
             <TableBody>
                 <TableRow>
-                        <TableCell></TableCell>
+                        <TableCell className="text-slate-500">MET</TableCell>
                         <TableCell>losa</TableCell>
                         <TableCell>columna</TableCell>
                         <TableCell>vigax</TableCell>

@@ -6,7 +6,7 @@ function YouTube() {
   return (
     <>
       <Link href="https://www.youtube.com/channel/UC_EYFEDjOPBJa5XNC8_B9Iw">
-        <FaYoutubeSquare className="w-7 h-7" />
+        <FaYoutubeSquare className="w-9 h-9" />
       </Link>
     </>
   );

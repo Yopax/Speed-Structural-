@@ -8,7 +8,7 @@ import YouTube from "./interface/icons/YouTube";
 function IconComp() {
   return (
     <>
-      <div className="flex  space-x-6 mt-4 max-sm:mt-6 justify-center my-3 max-sm:my-0">
+      <div className="flex  space-x-10 max-[425px]:space-x-5 my-8 max-sm:mt-6 justify-center max-sm:my-0">
         <motion.button whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.4 }}>
           <Linkedin />
         </motion.button>

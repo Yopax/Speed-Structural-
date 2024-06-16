@@ -8,7 +8,7 @@ import FormulasGenerales from './FormulasGenerales'
 function BarNav() {
   return (
     <>
-      <div className='flex w-[85%] max-sm:w-full  mx-auto mt-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 divide-x'>
+      <div className='flex w-full max-sm:w-full  mx-auto mt-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 divide-x'>
         <DatosPro/>
         <ToolOne/>
         <ToolTwo/>
