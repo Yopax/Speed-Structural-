@@ -18,7 +18,7 @@ function Items() {
     
       <div className="w-full text-center bg-black items-center p-2 grid grid-cols-3 max-[1024px]:grid-cols-3 max-[768px]:grid-cols-2 max-[425px]:grid-cols-1 justify-center">
         
-        <div className="flex flex-col text-white items-center justify-center bg-cover font-bold m-2 rounded-md h-80 bg-[url('/img4.jpg')]">
+        <div className="flex flex-col text-white items-center justify-center bg-cover font-bold m-2 rounded-md h-80 bg-[url('/img4a.jpg')]">
           <div>
             <p
               className={textOne}
@@ -31,7 +31,7 @@ function Items() {
             <GrSelect />
           </div>
         </div>
-        <div className="flex flex-col bg-cover bg-[url('/img6.jpg')] text-white items-center justify-center  font-bold m-2 rounded-md h-80 bg-blue-600">
+        <div className="flex flex-col bg-cover bg-[url('/img6a.jpg')] text-white items-center justify-center  font-bold m-2 rounded-md h-80 bg-blue-600">
           <div>
             <p
               className={textOne}
@@ -44,7 +44,7 @@ function Items() {
           <BsInputCursor />
           </div>
         </div>
-        <div className="flex flex-col bg-cover bg-[url('/img7.jpg')] text-white items-center justify-center  font-bold m-2 rounded-md h-80 bg-blue-600">
+        <div className="flex flex-col bg-cover bg-[url('/img7a.jpg')] text-white items-center justify-center  font-bold m-2 rounded-md h-80 bg-blue-600">
           <div>
             <p
               className={textOne}

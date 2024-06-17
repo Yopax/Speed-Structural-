@@ -12,7 +12,7 @@ import {
 
 function TableTwo() {
     const { columns, rows, ca, dimplx, dimply, pec, dimclx, dimcly, lcol,dimvlx,dimvly,lvx,lvy,dimvlx2,dimvly2,
-        cv1,cv2, columnGap, rowGap, getMaxRowSize, getMaxColumnSize,setTotal1,np
+        cv1,cv2, columnGap, rowGap, getMaxRowSize, getMaxColumnSize,setTotal1,np,losa, setLosa
     } = useStore((state) => ({
         columns: state.columns,
         rows: state.rows,
@@ -38,6 +38,8 @@ function TableTwo() {
         getMaxColumnSize: state.getMaxColumnSize,
         setTotal1: state.setTotal1,
         np: state.np,
+        losa: state.losa,
+        setLosa: state.setLosa,
         
 
     }));
@@ -55,16 +57,45 @@ function TableTwo() {
         dimx: state.dimx,
         dimy: state.dimy,
     }));
-    const maxRowSize = getMaxRowSize();
+
+    function getConinValue(setLosa2) {
+        // Restar 5 al valor de setLosa2
+        setLosa2 -= 5;
+        
+        if (setLosa2 === 12) {
+          return 0.28;
+        } else if (setLosa2 === 13) {
+          return 0.28;
+        } else if (setLosa2 === 14) {
+          return 0.28;
+        } else if (setLosa2 === 15) {
+          return 0.28;
+        } else if (setLosa2 === 16) {
+          return 0.28;
+        } else if (setLosa2 === 17) {
+          return 0.28;
+        } else if (setLosa2 === 20) {
+          return 0.3;
+        } else if (setLosa2 === 25) {
+          return 0.35;
+        } else if (setLosa2 === 30) {
+          return 0.4;
+        } else {
+          return 0;
+        }
+      }
+      
+      const losa2 = getConinValue((losa));
+      const maxRowSize = getMaxRowSize();
       const maxColumnSize = getMaxColumnSize();
 
-const losaAligerada = (columns * rows)*ca*maxColumnSize*maxRowSize;
-const total1 = losaAligerada + (numeroColumnas*pec*(columnGap/100)*(rowGap/100)*lcol) + (numerovigax*pec*(columnGap/100)*maxRowSize*lvx) + (numerovigay*pec*(rowGap/100)*maxColumnSize*lvy) + (cv1*dimx*dimy);
+      const losaAligerada2 =(columns * rows)*losa2*maxColumnSize*maxRowSize;
+      const total2 = losaAligerada2 + (numeroColumnas*pec*(columnGap/100)*(rowGap/100)*lcol) + (numerovigax*pec*(columnGap/100)*maxRowSize*lvx) + (numerovigay*pec*(rowGap/100)*maxColumnSize*lvy) + (cv1*dimx*dimy);
 
     return (
         <>
             <Table>
-            <TableCaption>Total piso {np}: {total1}</TableCaption>
+            <TableCaption>Total piso {np}: {total2}</TableCaption>
             <TableBody>
                 <TableRow>
                         <TableCell className="text-slate-500">MET</TableCell>
@@ -76,7 +107,7 @@ const total1 = losaAligerada + (numeroColumnas*pec*(columnGap/100)*(rowGap/100)*
                     </TableRow>
                     <TableRow>
                         <TableCell>cm</TableCell>
-                        <TableCell>{losaAligerada.toFixed(3)}</TableCell>
+                        <TableCell>{losaAligerada2.toFixed(3)}</TableCell>
                         <TableCell>{(numeroColumnas*pec*(columnGap/100)*(rowGap/100)*lcol).toFixed(3)}</TableCell>
                         <TableCell>{(numerovigax*pec*(columnGap/100)*maxRowSize*lvx).toFixed(3)}</TableCell>
                         <TableCell>{(numerovigay*pec*(rowGap/100)*maxColumnSize*lvy).toFixed(3)}</TableCell>

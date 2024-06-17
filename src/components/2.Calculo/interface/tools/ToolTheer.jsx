@@ -23,7 +23,7 @@ function ToolTheer() {
         <Dialog>
             <DialogTrigger className="font-sans text-xs h-20 w-20 text-white">
                 <div className="flex flex-col items-center justify-center">
-                    <p>MET</p>
+                    <p className="font-bold text-emerald-700">MET</p>
                 </div>
             </DialogTrigger>
             <DialogContent>
@@ -42,14 +42,14 @@ function ToolTheer() {
                             <div className="flex">
                                 <div className="flex-col w-full divide-y divide-stone-200 border-x border-y mx-auto">
                                     <div className="flex mx-auto">
-                                        <label className="w-2/3 px-2 text-stone-600 text-start">
+                                        <label className="w-2/3 text-emerald-600 px-2 text-start">
                                         Altura de entrepiso - piso a piso(m)
                                         </label>
                                         <input
                                             type="number"
                                             value={lcol}
                                             onChange={(e) => setLcol(parseFloat(e.target.value))}
-                                            className="w-1/3 text-center flex h-5 text-stone-600 font-sans bg-transparent px-3 text-xs border-l focus-visible:outline-none"
+                                            className="w-1/3 text-center flex h-5 text-emerald-600 font-sans bg-transparent px-3 text-xs border-l focus-visible:outline-none"
                                         />
                                     </div>
                                 </div>
@@ -62,14 +62,14 @@ function ToolTheer() {
                             <div className="flex">
                                 <div className="flex-col w-full divide-y divide-stone-200 border-x border-y mx-auto">
                                     <div className="flex mx-auto">
-                                        <label className="w-2/3 px-2 text-stone-600 text-start">
+                                        <label className="w-2/3 text-emerald-600 px-2 text-start">
                                         Altura de las vigas x(m)
                                         </label>
                                         <input
                                             type="number"
                                             value={lvx}
                                             onChange={(e) => setLvx(parseFloat(e.target.value))}
-                                            className="w-1/3 text-center flex h-5 text-stone-600 font-sans bg-transparent px-3 text-xs border-l focus-visible:outline-none"
+                                            className="w-1/3 text-center flex h-5 text-emerald-600 font-sans bg-transparent px-3 text-xs border-l focus-visible:outline-none"
                                         />
                                     </div>
                                 </div>
@@ -77,14 +77,14 @@ function ToolTheer() {
                             <div className="flex">
                                 <div className="flex-col w-full divide-y divide-stone-200 border-x border-y mx-auto">
                                     <div className="flex mx-auto">
-                                        <label className="w-2/3 px-2 text-stone-600 text-start">
+                                        <label className="w-2/3 text-emerald-600 px-2 text-start">
                                         Altura de las vigas y(m)
                                         </label>
                                         <input
                                             type="number"
                                             value={lvy}
                                             onChange={(e) => setLvy(parseFloat(e.target.value))}
-                                            className="w-1/3 text-center flex h-5 text-stone-600 font-sans bg-transparent px-3 text-xs border-l focus-visible:outline-none"
+                                            className="w-1/3 text-center flex h-5 text-emerald-600 font-sans bg-transparent px-3 text-xs border-l focus-visible:outline-none"
                                         />
                                     </div>
                                 </div>
@@ -95,14 +95,14 @@ function ToolTheer() {
                             <div className="flex">
                                 <div className="flex-col w-full divide-y divide-stone-200 border-x border-y mx-auto">
                                     <div className="flex mx-auto">
-                                        <label className="w-2/3 px-2 text-stone-600 text-start">
+                                        <label className="w-2/3 text-emerald-600 px-2 text-start">
                                             Ultimo piso(tn/m2)
                                         </label>
                                         <input
                                             type="number"
                                             value={cv1}
                                             onChange={(e) => setCv1(parseFloat(e.target.value))}
-                                            className="w-1/3 text-center flex h-5 text-stone-600 font-sans bg-transparent px-3 text-xs border-l focus-visible:outline-none"
+                                            className="w-1/3 text-center flex h-5 text-emerald-600 font-sans bg-transparent px-3 text-xs border-l focus-visible:outline-none"
                                         />
                                     </div>
                                 </div>
@@ -110,14 +110,14 @@ function ToolTheer() {
                             <div className="flex">
                                 <div className="flex-col w-full divide-y divide-stone-200 border-x border-y mx-auto">
                                     <div className="flex mx-auto">
-                                        <label className="w-2/3 px-2 text-stone-600 text-start">
+                                        <label className="w-2/3 text-emerald-600 px-2 text-start">
                                             Pisos intermedios(tn/m2)
                                         </label>
                                         <input
                                             type="number"
                                             value={cv2}
                                             onChange={(e) => setCv2(parseFloat(e.target.value))}
-                                            className="w-1/3 text-center flex h-5 text-stone-600 font-sans bg-transparent px-3 text-xs border-l focus-visible:outline-none"
+                                            className="w-1/3 text-center flex h-5 text-emerald-600 font-sans bg-transparent px-3 text-xs border-l focus-visible:outline-none"
                                         />
                                     </div>
                                 </div>

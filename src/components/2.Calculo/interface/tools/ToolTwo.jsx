@@ -36,7 +36,7 @@ function ToolTwo() {
         <Dialog>
             <DialogTrigger className="font-sans text-xs h-20 w-20  text-white">
                 <div className="flex flex-col items-center justify-center">
-                    <p>PRE</p>
+                    <p className="font-bold text-sky-700">PRE</p>
                 </div>
             </DialogTrigger>
             <DialogContent>
@@ -58,36 +58,36 @@ function ToolTwo() {
                             <div className="flex ">
                                 <div className="flex-col w-full divide-y divide-stone-200 border-x  border-y  mx-auto">
                                     <div className="flex mx-auto">
-                                        <label className="w-2/3 px-2 text-stone-600 text-start">
+                                        <label className="w-2/3 px-2 text-sky-600 text-start">
                                             AT - Columna Centrada(m2)
                                         </label>
                                         <input
                                             type="number"
                                             value={atcc}
                                             onChange={(e) => setAtcc(parseInt(e.target.value))}
-                                            className="w-1/3 text-center flex h-5  text-stone-600 font-sans  bg-transparent px-3 text-xs border-l focus-visible:outline-none"
+                                            className="w-1/3 text-center flex h-5  text-sky-600 font-sans  bg-transparent px-3 text-xs border-l focus-visible:outline-none"
                                         />
                                     </div>
                                     <div className="flex mx-auto">
-                                        <label className="w-2/3 px-2 text-stone-600 text-start">
+                                        <label className="w-2/3 px-2 text-sky-600 text-start">
                                             AT - Columna Esquinada(m2)
                                         </label>
                                         <input
                                             type="number"
                                             value={atce}
                                             onChange={(e) => setAtce(parseInt(e.target.value))}
-                                            className="w-1/3 text-center flex h-5  text-stone-600 font-sans  bg-transparent px-3 text-xs border-l focus-visible:outline-none"
+                                            className="w-1/3 text-center flex h-5  text-sky-600 font-sans  bg-transparent px-3 text-xs border-l focus-visible:outline-none"
                                         />
                                     </div>
                                     <div className="flex mx-auto">
-                                        <label className="w-2/3 px-2 text-stone-600 text-start">
+                                        <label className="w-2/3 px-2 text-sky-600 text-start">
                                             AT - Columna Excéntrica(m2)
                                         </label>
                                         <input
                                             type="number"
                                             value={atcx}
                                             onChange={(e) => setAtcx(parseInt(e.target.value))}
-                                            className="w-1/3 text-center flex h-5  text-stone-600 font-sans  bg-transparent px-3 text-xs border-l focus-visible:outline-none"
+                                            className="w-1/3 text-center flex h-5  text-sky-600 font-sans  bg-transparent px-3 text-xs border-l focus-visible:outline-none"
                                         />
                                     </div>
 
