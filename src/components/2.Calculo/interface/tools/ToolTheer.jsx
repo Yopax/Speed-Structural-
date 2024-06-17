@@ -63,7 +63,7 @@ function ToolTheer() {
                                 <div className="flex-col w-full divide-y divide-stone-200 border-x border-y mx-auto">
                                     <div className="flex mx-auto">
                                         <label className="w-2/3 px-2 text-stone-600 text-start">
-                                        Altura de las vigas x(cm)
+                                        Altura de las vigas x(m)
                                         </label>
                                         <input
                                             type="number"
@@ -78,7 +78,7 @@ function ToolTheer() {
                                 <div className="flex-col w-full divide-y divide-stone-200 border-x border-y mx-auto">
                                     <div className="flex mx-auto">
                                         <label className="w-2/3 px-2 text-stone-600 text-start">
-                                        Altura de las vigas y(cm)
+                                        Altura de las vigas y(m)
                                         </label>
                                         <input
                                             type="number"
